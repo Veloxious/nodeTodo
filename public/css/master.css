@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: pink;
+  font-size: 16pt;
+}
+h3{
+  text-align: center;
+}
+.buttons {
+  border: 1px solid darkgrey;
+}
+.completed_items{
+  margin-top: 5%;
+  border-top: 1px solid grey;
+}
