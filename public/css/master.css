@@ -9,15 +9,11 @@ h3{
   text-align: center;
 }
 
-.donebutt{
-  margin-left: 17%;
-  border: 1px solid darkgrey;
-}
-
 .buttons {
   border: 1px solid darkgrey;
 }
 .completed_items{
   margin-top: 5%;
   border-top: 1px solid grey;
+  text-align: center;
 }
