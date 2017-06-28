@@ -6,23 +6,28 @@
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <form class="" action="/" method="post">
+    <form class="" action="/add" method="post">
       <div class="">
         <input type="text" name="todos" placeholder="Add a todo...">
         <input type="submit" class="buttons" name="submitBut" value="Add todo">
       </div>
-      <div class="uncompleted_items">
-        <h3>To Do</h3>
-        {{#todos}}
-          <button type="submit" name="done" class="buttons" value="{{.}}">Complete</button>{{.}}<br>
-        {{/todos}}
-      </div>
     </form>
+      <div class="uncompleted_items">
+        <form class="" action="/complete" method="post">
+          <h3>To Do</h3>
+          {{#todos}}
+            <button type="submit" name="done" class="buttons" value="{{task}}">Complete</button>{{task}}<br>
+          {{/todos}}
+        </form>
+      </div>
       <div class="completed_items">
         <h3>Completed</h3>
-        {{#done}}
-          {{.}}<br>
-        {{/done}}
+        <form class="" action="/clear" method="post">
+          <button type="submit" name="button">Clear Done</button>
+        </form>
+        {{#completed}}
+          {{task}}<br>
+        {{/completed}}
       </div>
   </body>
 </html>
