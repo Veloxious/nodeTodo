@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
   models.todos.findAll({
       where: {
         completed: false
-      }
+      },
     })
     .then(function(todos) {
       models.todos.findAll({
